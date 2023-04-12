@@ -4,7 +4,7 @@ import { defineConfig } from '@theguild/components';
 const siteName = 'Guild Docs';
 
 export default defineConfig({
-  docsRepositoryBase: 'https://github.com/the-guild-org/the-guild-components/tree/main/website', // base URL for the docs repository
+  docsRepositoryBase: 'https://github.com/yuzukicat/blog-yuzukicat/tree/main/website', // base URL for the docs repository
   logo: (
     <>
       <svg

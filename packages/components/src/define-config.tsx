@@ -24,13 +24,6 @@ export function defineConfig({
   const siteUrl = process.env.SITE_URL;
 
   return {
-    editLink: {
-      text: 'Edit this page on GitHub',
-    },
-    feedback: {
-      content: 'Question? Give us feedback →',
-      labels: 'kind/docs',
-    },
     footer: {
       component: <FooterExtended />,
     },
@@ -76,8 +69,8 @@ export function defineConfig({
         description: frontMatter.description || `${siteName} Documentation`,
         twitter: {
           cardType: 'summary_large_image',
-          site: 'https://the-guild.dev',
-          handle: '@TheGuildDev',
+          site: 'https://kamisu66.com',
+          handle: '@Nougatshepard',
         },
         canonical: frontMatter.canonical || (siteUrl && `${siteUrl}${asPath}`),
         openGraph: {
@@ -86,7 +79,7 @@ export function defineConfig({
             {
               url:
                 frontMatter.image ||
-                `https://og-image.the-guild.dev/?product=${originalSiteName}&title=${encodeURI(
+                `https://og-image.kamisu66.com/?product=${originalSiteName}&title=${encodeURI(
                   title,
                 )}`,
               alt: frontMatter.description || title,

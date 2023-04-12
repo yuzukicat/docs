@@ -36,7 +36,7 @@ export const dummyFeatureList: IFeatureListProps = {
       link: {
         children: 'GitHub',
         title: 'Learn more',
-        href: 'https://github.com/the-guild-org',
+        href: 'https://github.com/yuzukicat',
       },
     },
     {
