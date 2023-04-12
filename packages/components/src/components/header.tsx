@@ -12,14 +12,11 @@ import {
 import clsx from 'clsx';
 import { useTheme } from 'nextra-theme-docs';
 import { useWindowSize } from '../helpers/hooks';
-import { GuildLogo, TheGuild } from '../logos';
 import { IHeaderProps } from '../types/components';
 import { Anchor } from './anchor';
-import { EcosystemList } from './ecosystem-list';
 import { CaretIcon, HamburgerIcon, MoonIcon } from './icons';
 import { Nav } from './nav';
 import { SearchBar } from './search-bar';
-import { SolutionsMenu } from './solutions-menu';
 
 export const Header = ({
   accentColor,
@@ -46,36 +43,29 @@ export const Header = ({
 
   const links = transformLinks([
     {
-      label: 'Solutions',
-      title: '',
-      href: 'https://the-guild.dev/solutions',
-      menu: <SolutionsMenu />,
-    },
-    {
-      label: 'Ecosystem',
-      title: 'View our projects',
-      href: 'https://the-guild.dev/open-source',
-      menu: <EcosystemList />,
-    },
-    {
       label: 'Blog',
-      title: 'Read our blog',
-      href: 'https://the-guild.dev/blog',
+      title: 'Blog, yuzukicat',
+      href: 'https://kamisu66.com/blog',
     },
     {
-      label: 'Our Services',
-      title: 'View our services',
-      href: 'https://the-guild.dev/services',
+      label: 'Archive',
+      title: 'Archives, blog, yuzukicat',
+      href: 'https://kamisu66.com/archive',
     },
     {
-      label: 'About Us',
-      title: 'Learn more about us',
-      href: 'https://the-guild.dev/about-us',
+      label: 'Tag',
+      title: 'Tags, blog, yuzukicat',
+      href: 'https://kamisu66.com/tag',
     },
     {
-      label: 'Contact Us',
-      title: 'Share your excitement with us',
-      href: 'https://the-guild.dev/contact',
+      label: 'Friend',
+      title: 'Friends, yuzukicat',
+      href: 'https:///kamisu66.com/friend',
+    },
+    {
+      label: 'About Me',
+      title: 'A cat knows human language',
+      href: 'https:///kamisu66.com/about',
     },
   ]);
 
@@ -107,17 +97,6 @@ export const Header = ({
 
         {/* TODO: find a way to remove this tag otherwise header not centered on mobile */}
         <div className="md:absolute" />
-
-        <Anchor
-          title="View our website"
-          className="flex items-center gap-x-1.5 text-black hover:opacity-75 dark:text-gray-100"
-          href="https://the-guild.dev"
-          sameSite={sameSite}
-        >
-          <GuildLogo className="h-9 w-9" />
-          <TheGuild className="hidden w-11 md:block" />
-        </Anchor>
-
         <Root asChild>
           <List>
             <Viewport className="absolute top-10 right-0 z-50" />
@@ -135,14 +114,14 @@ export const Header = ({
                         gap-2
                         p-1
                         text-base
-                        hover:text-gray-800
+                        hover:text-pink-600
                         dark:hover:text-gray-200
                         sm:text-lg
                         md:text-left
                         md:text-sm`,
                       activeLink && link.href.includes(activeLink)
-                        ? 'text-gray-800 dark:text-gray-200'
-                        : 'text-gray-600 dark:text-gray-400',
+                      ? 'text-pink-800 dark:text-gray-200'
+                      : 'text-pink-600 dark:text-gray-400',
                     )}
                     style={{ '--accentColor': accentColor }}
                     sameSite={sameSite}
@@ -189,7 +168,7 @@ export const Header = ({
                   onClick={() => setTheme(resolvedTheme === 'light' ? 'dark' : 'light')}
                   className="mr-1 self-center rounded-sm p-2 outline-none focus-visible:ring"
                 >
-                  <MoonIcon className="fill-transparent stroke-gray-500 dark:fill-gray-100 dark:stroke-gray-100" />
+                  <MoonIcon className="fill-transparent stroke-pink-500 dark:fill-gray-100 dark:stroke-gray-100" />
                 </button>
               )}
             </Nav>
