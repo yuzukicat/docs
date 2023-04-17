@@ -114,8 +114,11 @@ export const Header = ({
                         gap-2
                         p-1
                         text-base
+                        hover:underline
                         hover:text-pink-600
+                        hover:bg-pink-100
                         dark:hover:text-gray-200
+                        dark:hover:bg-[#111]
                         sm:text-lg
                         md:text-left
                         md:text-sm`,
