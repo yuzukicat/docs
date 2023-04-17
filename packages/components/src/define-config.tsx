@@ -1,7 +1,6 @@
 import { useRouter } from 'next/router';
 import { DocsThemeConfig, Navbar, useConfig } from 'nextra-theme-docs';
 import { FooterExtended, Header, mdxComponents } from './components';
-import { PRODUCTS, ProductType } from './products';
 
 export function defineConfig({
   siteName: originalSiteName,
@@ -17,10 +16,7 @@ export function defineConfig({
   const url = new URL(config.docsRepositoryBase as string);
   const [, org, repoName] = url.pathname.split('/');
 
-  const product = PRODUCTS[originalSiteName as ProductType];
-  const siteName = product
-    ? `${['ANGULAR', 'KITQL'].includes(originalSiteName) ? '' : 'GraphQL '}${product.name}`
-    : originalSiteName;
+  const siteName = originalSiteName;
   const siteUrl = process.env.SITE_URL;
 
   return {
@@ -46,15 +42,6 @@ export function defineConfig({
       link: `${url.origin}/${org}/${repoName}`, // GitHub link in the navbar
     },
     head: null,
-    logo: product?.logo && (
-      <>
-        <product.logo className="mr-1.5 h-9 w-9" />
-        <div>
-          <h1 className="text-sm font-medium">{siteName}</h1>
-          <h2 className="hidden text-xs sm:block">{product.title}</h2>
-        </div>
-      </>
-    ),
     ...config,
     components: {
       ...mdxComponents,

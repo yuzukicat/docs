@@ -1,9 +1,6 @@
 import { ReactElement } from 'react';
 import { AutocompleteComponents } from '@algolia/autocomplete-js';
-import { PRODUCTS } from '../../products';
 import { AlgoliaSearchItem } from '../../types/algolia';
-
-const products = Object.values(PRODUCTS);
 
 export const SidePreview = ({
   item,
@@ -17,22 +14,11 @@ export const SidePreview = ({
   if (!item) {
     return null;
   }
-  const project = products.find(p => p.name === item.source);
   return (
     <div
       className="flex h-[600px] select-text flex-col overflow-y-auto p-10"
       style={{ '--accentColor': accentColor }}
     >
-      {project && (
-        <div className="my-1 mb-4 box-border flex w-full select-none items-center justify-center">
-          <project.logo className="mr-3 h-9 w-9" />
-          <span className="flex flex-col justify-center">
-            <h4 className="m-0 text-sm font-semibold text-black dark:text-gray-400">
-              {project.name}
-            </h4>
-          </span>
-        </div>
-      )}
       <h3
         className="
           mt-0

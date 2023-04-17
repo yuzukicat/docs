@@ -29,12 +29,6 @@
     "*": {
       ".": [
         "./dist/index.d.ts"
-      ],
-      "logos": [
-        "./dist/logos.d.ts"
-      ],
-      "products": [
-        "./dist/products.d.ts"
       ]
     }
   },
@@ -58,41 +52,34 @@
     "@algolia/autocomplete-plugin-algolia-insights": "1.8.3",
     "@algolia/autocomplete-plugin-query-suggestions": "1.8.3",
     "@algolia/autocomplete-theme-classic": "1.8.3",
-    "@giscus/react": "2.2.8",
-    "@next/bundle-analyzer": "13.2.4",
+    "@next/bundle-analyzer": "13.3.0",
     "@radix-ui/react-navigation-menu": "1.1.2",
-    "algoliasearch": "4.16.0",
+    "algoliasearch": "4.17.0",
     "clsx": "1.2.1",
     "focus-trap-react": "10.1.1",
-    "fuzzy": "^0.1.3",
-    "mermaid": "10.0.2",
+    "mermaid": "10.1.0",
     "next-videos": "1.5.0",
-    "nextra": "2.3.0",
-    "nextra-theme-docs": "2.3.0",
+    "nextra": "2.4.0",
+    "nextra-theme-docs": "2.4.0",
     "react-instantsearch-dom": "6.39.1",
-    "react-paginate": "8.1.5",
     "react-player": "2.12.0",
     "remark-mdx-disable-explicit-jsx": "0.1.0",
     "search-insights": "2.4.0",
-    "semver": "^7.3.8",
+    "semver": "^7.4.0",
     "unist-util-visit": "4.1.2",
-    "use-debounce": "9.0.3"
+    "use-debounce": "9.0.4"
   },
   "devDependencies": {
     "@theguild/algolia": "workspace:*",
-    "@theguild/editor": "workspace:*",
-    "@types/dedent": "0.7.0",
     "@types/mdast": "3.0.11",
     "@types/mermaid": "9.1.0",
     "@types/react-dom": "18.0.11",
     "@types/semver": "7.3.13",
-    "dedent": "0.7.0",
     "esbuild-plugin-svgr": "1.1.0",
-    "graphql": "16.6.0",
-    "next": "13.2.4",
+    "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.2.7",
+    "tailwindcss": "3.3.1",
     "unified": "10.1.2"
   },
   "publishConfig": {

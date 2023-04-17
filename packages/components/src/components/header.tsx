@@ -43,28 +43,28 @@ export const Header = ({
 
   const links = transformLinks([
     {
-      label: 'Blog',
-      title: 'Blog, yuzukicat',
-      href: 'https://kamisu66.com/blog',
+      label: 'Home',
+      title: 'A Cat knows human language',
+      href: 'https://kamisu66.com',
     },
     {
       label: 'Archive',
-      title: 'Archives, blog, yuzukicat',
+      title: 'Blog, Yuzukicat, Archive',
       href: 'https://kamisu66.com/archive',
     },
     {
       label: 'Tag',
-      title: 'Tags, blog, yuzukicat',
+      title: 'Blog, Yuzukicat, Tags',
       href: 'https://kamisu66.com/tag',
     },
     {
       label: 'Friend',
-      title: 'Friends, yuzukicat',
+      title: 'Blog, Yuzukicat, Friends',
       href: 'https:///kamisu66.com/friend',
     },
     {
       label: 'About Me',
-      title: 'A cat knows human language',
+      title: 'Blog, Yuzukicat, About Author',
       href: 'https:///kamisu66.com/about',
     },
   ]);

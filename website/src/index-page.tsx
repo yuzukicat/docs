@@ -1,19 +1,8 @@
-import { HeroGradient, HeroVideo, InfoList, NPMBadge } from '@theguild/components';
+import {  HeroVideo, InfoList } from '@theguild/components';
 
 export function IndexPage() {
   return (
     <>
-      <HeroGradient
-        title="The Guild Docs"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at gravida lacus"
-        link={{
-          href: '/docs',
-          children: 'Get Started',
-          title: 'Get started with The Guild Docs',
-        }}
-        version={<NPMBadge name="@theguild/components" />}
-        colors={['#000', '#1cc8ee']}
-      />
       <HeroVideo
         flipped
         title="Simple Video"
