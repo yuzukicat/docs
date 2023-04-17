@@ -115,16 +115,15 @@ export const Header = ({
                         p-1
                         text-base
                         hover:underline
-                        hover:text-pink-600
-                        hover:bg-pink-100
+                        hover:text-[#E97191]
                         dark:hover:text-gray-200
                         dark:hover:bg-[#111]
                         sm:text-lg
                         md:text-left
                         md:text-sm`,
                       activeLink && link.href.includes(activeLink)
-                      ? 'text-pink-800 dark:text-gray-200'
-                      : 'text-pink-600 dark:text-gray-400',
+                      ? 'text-[#A30065] dark:text-gray-200'
+                      : 'text-[#E6008E] dark:text-gray-400',
                     )}
                     style={{ '--accentColor': accentColor }}
                     sameSite={sameSite}
