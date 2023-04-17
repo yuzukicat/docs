@@ -243,8 +243,8 @@ importers:
         specifier: 4.1.2
         version: 4.1.2
       use-debounce:
-        specifier: 9.0.3
-        version: 9.0.3(react@18.2.0)
+        specifier: 9.0.4
+        version: 9.0.4(react@18.2.0)
     devDependencies:
       '@theguild/algolia':
         specifier: workspace:*
@@ -305,8 +305,8 @@ importers:
         specifier: 0.2.1
         version: 0.2.1(ts-node@10.9.1)
       '@types/react':
-        specifier: 18.0.31
-        version: 18.0.31
+        specifier: 18.0.35
+        version: 18.0.35
       typescript:
         specifier: 5.0.3
         version: 5.0.3
@@ -5440,14 +5440,6 @@ packages:
     resolution: {integrity: sha512-94cEJHfBaINba2XGQOWFJF/tYe+AImIhOPqMCfqyeFOgk0qUpDZyDOOW76A1rgdtWndR8UwsMPgV/uuTM8vZ7w==}
     dependencies:
       '@types/react': 18.0.35
-    dev: true
-
-  /@types/react@18.0.31:
-    resolution: {integrity: sha512-EEG67of7DsvRDU6BLLI0p+k1GojDLz9+lZsnCpCRTa/lOokvyPBvp8S5x+A24hME3yyQuIipcP70KJ6H7Qupww==}
-    dependencies:
-      '@types/prop-types': 15.7.5
-      '@types/scheduler': 0.16.2
-      csstype: 3.1.1
     dev: true
 
   /@types/react@18.0.35:
@@ -17689,8 +17681,8 @@ packages:
       querystring: 0.2.0
     dev: false
 
-  /use-debounce@9.0.3(react@18.2.0):
-    resolution: {integrity: sha512-FhtlbDtDXILJV7Lix5OZj5yX/fW1tzq+VrvK1fnT2bUrPOGruU9Rw8NCEn+UI9wopfERBEZAOQ8lfeCJPllgnw==}
+  /use-debounce@9.0.4(react@18.2.0):
+    resolution: {integrity: sha512-6X8H/mikbrt0XE8e+JXRtZ8yYVvKkdYRfmIhWZYsP8rcNs9hk3APV8Ua2mFkKRLcJKVdnX2/Vwrmg2GWKUQEaQ==}
     engines: {node: '>= 10.0.0'}
     peerDependencies:
       react: '>=16.8.0'
